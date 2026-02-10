@@ -1,0 +1,17 @@
+.chefListContainer {
+  margin: 0 auto;
+  width: 65%;
+  height: 60vh;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chefListContainer ul {
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
