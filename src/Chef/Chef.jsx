@@ -7,9 +7,13 @@ import Chef_Recipe from "./Chef_Recipe";
 export const Data = createContext();
 
 const Chef = () => {
-  const [ingredData, setIngredData] = useState([]);
+  const [ingredData, setIngredData] = useState([
+    "Chicken",
+    "Oregano",
+    "Tomatoes",
+  ]);
   const addIngred = (data) => {
-    setIngredData([...ingredData, data]);
+    setIngredData((prevIngredData) => [...prevIngredData, data]);
   };
 
   return (

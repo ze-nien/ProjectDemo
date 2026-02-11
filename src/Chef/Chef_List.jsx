@@ -8,7 +8,9 @@ const Chef_List = () => {
   return (
     <div className={styles.chefListContainer}>
       <h1>Ingredients on hand:</h1>
-      <ul>{ingredient && ingredient.map((item) => <li>{item}</li>)}</ul>
+      <ul>
+        {ingredient && ingredient.map((item) => <li key={item}>{item}</li>)}
+      </ul>
     </div>
   );
 };
