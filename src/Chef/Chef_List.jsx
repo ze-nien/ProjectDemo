@@ -5,14 +5,14 @@ import styles from "./Chef_List.module.css";
 
 const Chef_List = () => {
   const ingredient = useContext(Data);
-  return (
+  return ingredient.length > 0 ? (
     <div className={styles.chefListContainer}>
       <h1>Ingredients on hand:</h1>
       <ul>
         {ingredient && ingredient.map((item) => <li key={item}>{item}</li>)}
       </ul>
     </div>
-  );
+  ) : null;
 };
 
 export default Chef_List;

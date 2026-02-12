@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div
       style={{
-        marginBottom: "1rem",
+        marginBottom: "1.5rem",
         padding: "1rem 0rem",
         borderBottom: "1px solid brown",
         display: "flex",
