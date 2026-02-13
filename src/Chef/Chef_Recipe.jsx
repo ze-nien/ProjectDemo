@@ -16,7 +16,7 @@ const Chef_Recipe = ({ onGetRecipe, isLoading }) => {
         className={styles.chefRecipeButton}
         disabled={isLoading}
       >
-        Get a recipe
+        Ask AI for a suggestion
       </button>
     </section>
   ) : null;

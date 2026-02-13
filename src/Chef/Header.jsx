@@ -15,7 +15,7 @@ const Header = () => {
       }}
     >
       <LuChefHat size="2.5rem" />
-      <h1>Chef Claude</h1>
+      <h1>Chef Gemini</h1>
     </div>
   );
 };

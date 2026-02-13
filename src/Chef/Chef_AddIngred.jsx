@@ -11,6 +11,10 @@ const Chef_AddIngred = ({ addIngred, ingredData }) => {
   //<form onSubmit={sumbitHandler}
   //<input value={input} onChange={(e) => setInput(e.target.value)}
 
+  // checkbox多選 不能透過Objcet.fromEntries取得(僅get) 另外getAll且合併成物件
+  // const data = Object.fromEntries(formData);
+  // const testData = formData.getAll("test");
+  // const allData = { ...data, testData };
   function addIngredAction(formData) {
     const newIngred = formData.get("ingredient").trim().toLowerCase();
     if (ingredData.some((item) => item.toLowerCase() === newIngred)) {
@@ -18,11 +22,6 @@ const Chef_AddIngred = ({ addIngred, ingredData }) => {
       return;
     }
     addIngred(newIngred);
-
-    // checkbox多選 不能透過Objcet.fromEntries取得(僅get) 另外getAll且合併成物件
-    // const data = Object.fromEntries(formData);
-    // const testData = formData.getAll("test");
-    // const allData = { ...data, testData };
   }
 
   return (
